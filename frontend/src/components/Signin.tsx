@@ -101,8 +101,8 @@ export const Signin = ()=> {
                                 }));
                             }}
                     />
-                    <div className="flex m-2 items-center">
-                        <input onChange={visibilityChange} type="checkbox" className="shrink-0 hover:cursor-pointer mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500"/>
+                   <div className="flex m-2 items-center">
+                        <input onChange={visibilityChange} type="checkbox" className="shrink-0 mt-0.5 hover:cursor-pointer border-gray-200 rounded text-blue-600 focus:ring-blue-500"/>
                         <label className="text-sm text-gray-500 ms-3">Show password</label>
                     </div>
                     <SubmitButton onClick={handleSubmit} isSubmitting={isSubmitting} title="Signin"/>
