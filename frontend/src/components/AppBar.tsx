@@ -85,12 +85,12 @@ export const AppBar = ()=> {
 
 const MyblogButton = ()=> {
     return (
-        <Link className="bg-green-500 w-full inline-flex hover:bg-green-600 mx-1 p-2 text-sm rounded-lg hover:rounded-2xl transform-all duration-500 justify-center items-center" to={'/blog/myblogs'}>My Blogs</Link>
+        <button><Link className="bg-green-500 w-full inline-flex hover:bg-green-600 mx-1 p-2 text-sm rounded-lg hover:rounded-2xl transform-all duration-500 justify-center items-center" to={'/blog/myblogs'}>My Blogs</Link></button>
     )
 }
 
 const NewBlogButton = ()=> {
     return (
-        <Link className="bg-blue-500 w-full inline-flex text-white hover:bg-blue-700 mx-1 rounded-md hover:rounded-2xl transform-all duration-500 justify-center text-sm p-2 items-center" to={'/blog/upload'}>New Blog</Link>
+        <button><Link className="bg-blue-500 w-full inline-flex text-white hover:bg-blue-700 mx-1 rounded-md hover:rounded-2xl transform-all duration-500 justify-center text-sm p-2 items-center" to={'/blog/upload'}>New Blog</Link></button>
     )
 }
