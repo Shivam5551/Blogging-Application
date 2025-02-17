@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+pnpm-lock.yaml
+.vscode/
+.idea/
+
+# Hono.js
+/dist/
+.env
+.env.local
+.env.*.local
+.wrangler
+wrangler.toml
+
+# React.js (Frontend)
+build/
+public/static/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+node_modules/
+
