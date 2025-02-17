@@ -92,7 +92,7 @@ export const Signin = ()=> {
                             heading="Password"
                             id="password"
                             placeholder="Password"
-                            type="password"
+                            type={passwordType}
                             value={postInputs.password}
                             onChange={ (e) => {
                                 setPostInputs(c=> ({
