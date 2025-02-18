@@ -48,7 +48,7 @@ export const RenderBlog = ()=> {
                     <div className="text-base text-violet-100 whitespace-break-spaces font-extralight">
                         <ReactMarkdown>{blog.content}</ReactMarkdown>
                     </div>
-                    
+                    <div className="h-12 flex"></div>
                 </div>
                 <div className="hidden sm:block sm:w-[20%] px-2 py-5">
                     <span className="p-2 text-zinc-300 font-semibold">Author</span>
