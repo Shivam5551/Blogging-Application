@@ -3,6 +3,7 @@ import { Avatar } from "./Avatar"
 import { useFetchBlog } from "../hooks/BlogHook"
 import { useParams } from "react-router-dom"
 import { BlogLoading } from "./Loading"
+import ReactMarkdown from "react-markdown"
 
 export const RenderBlog = ()=> {
 
@@ -45,7 +46,7 @@ export const RenderBlog = ()=> {
                         Posted On {blog.publishedOn.split('T')[0]}
                     </div>
                     <div className="text-base text-violet-100 whitespace-break-spaces font-extralight">
-                        {blog.content}
+                        <ReactMarkdown>{blog.content}</ReactMarkdown>
                     </div>
                     
                 </div>

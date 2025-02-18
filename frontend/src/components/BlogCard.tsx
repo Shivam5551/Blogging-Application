@@ -2,6 +2,7 @@ import { Fragment } from "react/jsx-runtime"
 import { Circle } from "./Circle"
 import { Avatar } from "./Avatar"
 import { useNavigate } from "react-router-dom"
+import ReactMarkdown from "react-markdown"
 
 interface Blog {
     id: string
@@ -46,10 +47,10 @@ const Content = ({ content } : { content: string }) => {
     return (
         <Fragment>
             <div className=" pt-2 text-slate-400 text-base font-thin ">
-                {content.slice(0, 250) + "..."}
+                <ReactMarkdown>{content.slice(0, 250) + "..."}</ReactMarkdown>
             </div>
             <div className="pl-2 pt-1 text-gray-400">
-                {Math.ceil(content.length/100) + " min read"}
+                {Math.ceil(content.length/1000) + " min read"}
             </div>
         </Fragment>
     )
